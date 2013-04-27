@@ -1,0 +1,3 @@
+REDISTOGO_URL: 'localhost:6379'
+MAILCHIMP_API_KEY: 'your-API-key'
+MAILCHIMP_LIST_ID: 'list-id'
