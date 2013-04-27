@@ -46,4 +46,8 @@ Push the app
 
     git push heroku master
 
+Scale the worker (this will cause you to be billed):
+
+    heroku ps:scale worker=1
+
 ...profit.
