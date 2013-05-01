@@ -6,9 +6,6 @@ This is a simple app designed to be deployed
 to Heroku and gather email addresses in
 Mailchimp.
 
-It uses Resque to queue subscribing a user to
-a Mailchimp list.
-
 ---
 
 ## Getting started
@@ -34,10 +31,6 @@ Create your heroku app:
 
     heroku create my_awesome_idea
 
-Add Redis To Go:
-
-    heroku addons:add redistogo:nano
-
 Set your Mailchimp API key and list id
 
     heroku config:add MAILCHIMP_API_KEY=my-api-key MAILCHIMP_LIST_ID=my-list-id
@@ -45,9 +38,5 @@ Set your Mailchimp API key and list id
 Push the app
 
     git push heroku master
-
-Scale the worker (this will cause you to be billed):
-
-    heroku ps:scale worker=1
 
 ...profit.
