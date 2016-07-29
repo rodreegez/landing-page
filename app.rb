@@ -15,9 +15,6 @@ if ENV['RACK_ENV'] != 'production'
   end
 end
 
-# Gibbon::Request.api_key = ENV['MAILCHIMP_API_KEY']
-# Gibbon::Request.timeout = 15
-
 class LandingPage < Sinatra::Base
   get '/' do
     erb :index, :layout => :layout
@@ -34,7 +31,7 @@ class LandingPage < Sinatra::Base
         status: "subscribed" 
       }
     )   
-     
+
     redirect '/thanks'
   end
 
