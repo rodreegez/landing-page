@@ -1,1 +1,1 @@
-web: bundle exec unicorn config.ru -p $PORT
+web: bundle exec puma config.ru -p $PORT

@@ -2,9 +2,8 @@ source 'https://rubygems.org'
 
 gem 'gibbon'
 gem 'rake'
-gem 'resque'
 gem 'sinatra'
-gem 'unicorn'
+gem 'puma'
 
 group :development do
   gem 'foreman'
