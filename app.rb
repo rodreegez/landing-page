@@ -27,10 +27,10 @@ class LandingPage < Sinatra::Base
 
     gibbon.lists(ENV['MAILCHIMP_LIST_ID']).members(md5_email(email)).upsert(
       body: {
-        email_address: email, 
-        status: "subscribed" 
+        email_address: email,
+        status: "subscribed"
       }
-    )   
+    )
 
     redirect '/thanks'
   end
